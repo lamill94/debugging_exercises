@@ -1,18 +1,10 @@
 def factorial(n):
-    product = n
-    print(f"At the start, product = {product} & n = {n}")
-    while n > 1:
-        n -= 1
-        print(f"n is now {n}")
-        print(f"Product = product * n = {product} * {n}")
+    product = 1
+    while n > 0:
         product *= n
-        print(f"Product = {product}")
-        print("")
-
+        n -= 1
     return product
 
-print(f"""
-Running: factorial(5)
-Expected: 120`
-Actual: {factorial(5)}
-""")
+print(factorial(5))
+# Expected 120 (the result of: 5 * 4 * 3 * 2 * 1)
+# Actual: 0
